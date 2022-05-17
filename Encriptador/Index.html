@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="logo">
+        <img src="./imgs/Logo.png" id="a">
+    </div>
+
+    <div id="principal">
+
+        <form>
+            <div>
+                <textArea id="catcher" placeholder="Ingrese el texto"
+                    title="solo letras minúsculas y sin acento"></textArea>
+                <p id="notify"></p>
+            </div>
+            <div id="buttonsArea">
+                <p id="notification">solo letras minúsculas y sin acentos</p>
+                <button class="buttons" id="encrypt">Encriptar</button>
+                <button class="buttons" id="decrypt">Desencriptar</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div id="messageArea">
+        <p id="message"></p>
+        <p id="warning"><img id="muñeco" src="./imgs/Muñeco.svg">Ningún mensaje fue encontrado</p>
+        
+        <button id="copy" hidden="true">Copiar</button>
+    </div>
+    <div id="space"></div>
+    <footer>
+        <p>Elaborado por Steffany Roa</p>
+    </footer>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
